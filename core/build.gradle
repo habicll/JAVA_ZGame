@@ -1,0 +1,86 @@
+plugins {
+    id 'jacoco'
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+eclipse.project.name = appName + '-core'
+
+jacoco {
+    toolVersion = "0.8.11" // Version de JaCoCo
+}
+
+dependencies {
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+    api "com.github.tommyettinger:libgdx-utils:$utilsVersion"
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.8.0'
+    testImplementation "com.badlogicgames.gdx:gdx-backend-headless:$gdxVersion"
+    testImplementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+
+    compileOnly 'javax.annotation:javax.annotation-api:1.3.2'
+    compileOnly 'org.projectlombok:lombok:1.18.30' // ✅ Ajouter Lombok
+    annotationProcessor 'org.projectlombok:lombok:1.18.30' // ✅ Ajouter pour la compilation
+
+    if(enableGraalNative == 'true') {
+        implementation "io.github.berstanio:gdx-svmhelper-annotations:$graalHelperVersion"
+    }
+}
+
+test {
+    useJUnit()
+    finalizedBy jacocoTestReport // Générer le rapport après les tests
+}
+
+sourceSets {
+    test {
+        resources {
+            // Pointe vers le dossier assets à la racine du projet
+            srcDir file("${project.rootDir}/assets")
+        }
+    }
+}
+
+// ✅ Configurer le rapport JaCoCo
+jacocoTestReport {
+    dependsOn test // Les tests doivent être exécutés avant le rapport
+    
+    reports {
+        xml.required = true
+        html.required = true
+        csv.required = false
+        
+        // Définir où sauvegarder les rapports
+        html.outputLocation = layout.buildDirectory.dir('reports/jacoco')
+    }
+    
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+                // ✅ Exclure les classes générées/non testables
+                '**/Main.class',
+                '**/GameScreen.class',
+                '**/ui/**',           // ✅ Exclut tout le package ui
+                '**/screens/**',
+            ])
+        }))
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << '-parameters'
+}
+
+// jacocoTestCoverageVerification {
+//     violationRules {
+//         rule {
+//             limit {
+//                 minimum = 0.60
+//                 counter = 'LINE'
+//             }
+//         }
+//     }
+// }
+
+check.dependsOn jacocoTestCoverageVerification

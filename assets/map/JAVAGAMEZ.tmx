@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="45" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="117">
+ <tileset firstgid="1" source="../tilesets/Background_Dark-Green_TileSet.tsx"/>
+ <tileset firstgid="409" source="../tilesets/Buildings_dark_TileSet.tsx"/>
+ <tileset firstgid="578" source="../tilesets/Garbage_TileSet.tsx"/>
+ <tileset firstgid="610" source="../tilesets/Wire-Fence_TileSet.tsx"/>
+ <tileset firstgid="625" source="../tilesets/Brick-Wall_TileSet.tsx"/>
+ <tileset firstgid="643" source="../tilesets/Iron-Fence_TileSet.tsx"/>
+ <tileset firstgid="655" source="../tilesets/Car_1_Overgrown_Dark-Green_Gray.tsx"/>
+ <tileset firstgid="657" source="../tilesets/Street-Light_1_Side.tsx"/>
+ <tileset firstgid="658" source="../tilesets/Street-Light_5_Up_Overgrown_Dark-Green.tsx"/>
+ <tileset firstgid="659" source="../tilesets/Stop-sign_Down_2_Overgrown_Dark-Green.tsx"/>
+ <tileset firstgid="660" source="../tilesets/Garbage-Bin_1.tsx"/>
+ <tileset firstgid="661" source="../tilesets/Garbage-Bin_3.tsx"/>
+ <tileset firstgid="662" source="../tilesets/Barrel_blue_2.tsx"/>
+ <tileset firstgid="663" source="../tilesets/Barrel_rust_red_2.tsx"/>
+ <tileset firstgid="664" source="../tilesets/Traffic-cone.tsx"/>
+ <tileset firstgid="665" source="../tilesets/Bench_6_up_Overgrown_Dark-Green.tsx"/>
+ <tileset firstgid="666" source="../tilesets/Grass_3_Stepping-On-Animation_Dark-Green-Sheet2.tsx"/>
+ <tileset firstgid="667" source="../tilesets/Tree_9_Small-oak_Dark-Green.tsx"/>
+ <tileset firstgid="668" source="../tilesets/Tree_8_Birch_Dark-Green.tsx"/>
+ <tileset firstgid="669" source="../tilesets/Tree-trunk_2_grass_Dark-Green.tsx"/>
+ <tileset firstgid="670" source="../tilesets/Tree_2_Spruce-Sparse_Dark-Green.tsx"/>
+ <tileset firstgid="671" source="../tilesets/Car_6_Rust_Dark-Blue_Scrap.tsx"/>
+ <tileset firstgid="672" source="../tilesets/Car_5_Overgrown_Dark-Green_Tractor_Side.tsx"/>
+ <tileset firstgid="673" source="../tilesets/Car_9_Overgrown_Bleak-Yellow_Green_Motorcycle_Side.tsx"/>
+ <tileset firstgid="674" source="../tilesets/Container_8_Red_Horizontal_Overgrown_Dark-Green.tsx"/>
+ <tileset firstgid="675" source="../tilesets/Tire_2_Grass_Bleak-Yellow.tsx"/>
+ <tileset firstgid="676" source="../tilesets/Vending-machine_Blue_Overgrown_Dark-Green.tsx"/>
+ <tileset firstgid="677" source="../tilesets/Hydrant_1_yellow.tsx"/>
+ <tileset firstgid="678" source="../tilesets/Barrel_rust_red_1.tsx"/>
+ <tileset firstgid="679" source="../tilesets/Flowers_2_purple.tsx"/>
+ <tileset firstgid="680" source="../tilesets/Flowers_3_yellow.tsx"/>
+ <tileset firstgid="681" source="../tilesets/Stump_1.tsx"/>
+ <tileset firstgid="682" source="../tilesets/Car_6_Overgrown_Dark-Green_Orange_Scrap.tsx"/>
+ <tileset firstgid="683" source="../tilesets/buttons.tsx"/>
+ <tileset firstgid="684" source="../tilesets/buttons (1).tsx"/>
+ <tileset firstgid="685" source="../tilesets/buttons (2).tsx"/>
+ <layer id="1" name="FOND" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztk0sKwCAMRGMX3sP7e40uum/vI1kEpR8q2cwEHHhIXD2GJItIDoIF7bGcuaipYzPaaYayPXs+yN0taA+Pt74neb8Re75H//QGd9Ku38K8G19Be3l7ZmcM6078dY328bijPWa5UkfnaDuC9ljOfFga76gegw==
+  </data>
+ </layer>
+ <layer id="7" name="ROUTE" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzNl0EKwjAQRadduHDlGbrqxjvkukI9hCiewK2eoCtB1yYwg9M4jWaS1Hx4FBo6+QzJTwOQTwfL1XLOWLO0yHO30Hwb9tTC+5xSJwRXj+96JdBMPbeNvpbEYOtdEJLBMZOA89yh55Q6Ibhn8h2rnWWP3KD8Hhw8z6Oihuvt0XJCHlDWs99njWgNux7fkWd6WVHbVvZcY1ZImUFaQ11Z8THfjEwk3HPst7Hk0rfzepVxLkna3PjXP4a/znnuhlgikyV/TrTOeR7w3A1BmVw6N/x9aOB9fvM84LkbwmVyydxwnozQ/xHkPPhVpjCSXy7uWbM3l9Cc504Yq1U135NeIMGJGA==
+  </data>
+ </layer>
+ <layer id="5" name="BASEZOMBI_SOL" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzVll0KwkAMhHd7pF5AUJ/8odJWWlKP6Rk8gb54GhN2gjlC5oOBfRyGZDal5EW6UjbVQzWpbhAD7v1E4nmvHg/wOZJ4tmzP8PmuTdmxbD3rD4HnAbPgWWf3ayzqc4Vv641X/c9JZtz3hqwZPBs207Pq3rV3VnzvjpDl+9XZuCb2PCLXKewfQ9dJmOMd0d9tO3hR9SRd5wzoDpaOjv8KC4KMGfbPkXBvrOiR7Ei4N5617SMDfjf3uO0Y8J5e8If/AHevJpM=
+  </data>
+ </layer>
+ <layer id="8" name="TROU" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBieQHigHTAKRgGVgTojA4MmI+Xm8AOxABALUm4UVtABxJ1QdjjQvZFUcLM6EGsAsSblRmEFC4B4IZXNtAdiByB2pLK5wwk4UCFtjIJRMAog4NNofhpSgNZ1MS0AretiagD09j+sLkZumwwVsICB+m0TXAAARIsJkg==
+  </data>
+ </layer>
+ <objectgroup id="15" name="Calque d'Objets 1">
+  <object id="100" x="0" y="0" width="62.5" height="320"/>
+  <object id="101" x="645.5" y="0" width="74" height="320"/>
+  <object id="102" x="113" y="12.5" width="36.5" height="18"/>
+  <object id="103" x="384.5" y="3" width="63" height="12.5"/>
+  <object id="104" x="254" y="346"/>
+  <object id="105" x="369.5" y="80.5" width="22" height="32"/>
+  <object id="106" x="387" y="63.5" width="20.5" height="32.5"/>
+  <object id="107" x="337" y="196" width="41" height="27"/>
+  <object id="108" x="417.5" y="180" width="45" height="27"/>
+  <object id="109" x="464.5" y="196.5" width="30.5" height="11.5"/>
+  <object id="110" x="144" y="259.5" width="11" height="11.5"/>
+  <object id="111" x="176" y="277" width="15.5" height="27"/>
+  <object id="112" x="561.5" y="245.5" width="36" height="41"/>
+  <object id="113" x="576" y="289" width="63" height="30"/>
+  <object id="114" x="529.5" y="110" width="53" height="17"/>
+  <object id="115" x="561" y="94" width="22.5" height="13.5"/>
+  <object id="116" x="354" y="278" width="53" height="40"/>
+ </objectgroup>
+ <layer id="16" name="OBJET" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztlUkOgCAMRQn3XznPs57TGDEaIw1SBhP7NmyA/n7awtgzI9/Xgks2KJJr3DMiYrZIvVgiz/GJf5IBdVdZrknsjLijqzd9cc6E5s1zyHeIa44JUkstzpc0e7wTen6DxVJ80z2uw/xCwyD2NvzsD4jJcX7dB/wk3BDQW0ux8Wc1Dvzu+f6Hq8xF07Nz80zmWwzEOnRAelZXShig
+  </data>
+ </layer>
+ <layer id="4" name="BASE" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztlrEKgCAYhNUHqPdfktaSlqZqCSqoXXue7keHxhaJAw8+XD8OOX6rlbKgBSxxcG2Sd23+tvkWD9dex7cj6VpcVzCDjcRZ/sYODnATOUvXA7hInP3LmSXiWxmuvQvku7GQOAfC3RBnV3YjezzhveHSbriyG1nDeG9Iv1PqmGU3xvSXWTqWnDrC0rHkAYk7NZ0=
+  </data>
+ </layer>
+ <layer id="6" name="BASEZOMBI" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzVljEKwkAQRWfnGAHLaJ8LeJsY0IAHs/QcgqiNtzD20Rl2B0KqdOE9GDblY/j7syIMxiTytHmltU2W486X4k3Bnd/Fm0KtIkPKQ2GvOcuEPZ/MtbO5m+tWGXluNZ+NnRXM+WOuO/ve6Lo+Swjn6GfCnj3PR2X186HsObruC3J2KF03df5B3hue515zb4yQbMx7g5QN0h2MrnNukDw74X013wfE2WkB/+w5vutzeeP9AcsQLiE=
+  </data>
+ </layer>
+ <layer id="17" name="BASEZOMBISUP" width="45" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcYAUTdc1bjsW8lVS2YxSMAmoDaucDaoB7jAwM94H4MeNAu2ToglWDMF5HwSgYBZjgMR3LOlLLe2ztmlEwCkbByALU7ssAAC2zCb4=
+  </data>
+ </layer>
+ <layer id="18" name="NUMERO" width="45" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1MENACAIADHC/psoO7qCfDAm7QT3uggmrXxdAPxm+wbQVL4BXDoqqQIL
+  </data>
+ </layer>
+</map>
